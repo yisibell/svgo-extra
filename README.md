@@ -4,8 +4,9 @@ A collection of **SVGO** Plug-ins.
 
 # Features
 
-- make SVG's color easy to change.
-- make SVG's size responsive.
+- Make SVG's color easy to change.
+- Make SVG's size responsive.
+- Create a suitable configuration for **SVGO**.
 
 # Installation
 
@@ -29,6 +30,10 @@ Create an **SVGO** plug-in that can move the attribute of the child node you spe
 ## responsiveSVGSize
 
 Create a **SVGO** plug-in that can make svg size responsive.
+
+## createSvgoConfig
+
+Create a suitable configuration for **SVGO**, use `preset-default` config by default.
 
 # CHANGE LOG
 

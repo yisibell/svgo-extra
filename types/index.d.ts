@@ -1,4 +1,5 @@
 import type { CustomPlugin } from 'svgo'
+import type { CreateSvgoConfig } from '../src/createSvgoConfig'
 
 export interface MoveChildAttrToSVGElementOptions {
   wrapperElementNames?: string[]
@@ -17,9 +18,12 @@ declare const moveChildAttrToSVGElement: MoveChildAttrToSVGElement
 
 declare const responsiveSVGSize: ResponsiveSVGSize
 
+declare const createSvgoConfig: CreateSvgoConfig
+
 export {
   MoveChildAttrToSVGElement,
   moveChildAttrToSVGElement,
   responsiveSVGSize,
   ResponsiveSVGSize,
+  createSvgoConfig,
 }

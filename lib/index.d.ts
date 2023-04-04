@@ -1,4 +1,20 @@
-import { CustomPlugin } from 'svgo';
+import { Config, CustomPlugin } from 'svgo';
+
+interface OptimizeSvgExtraOptions {
+  /** whether to enable moveStrokeAttrToSvgNode plugin */
+  moveStrokeAttrToSvgNode?: boolean
+  /** whether to enable movePathFillAttrToSvgNode plugin */
+  movePathFillAttrToSvgNode?: boolean
+  /** whether to enable responsiveSVGSize plugin */
+  responsiveSVGSize?: boolean
+  /** Whether to add preset-default config for svgo */
+  presetDefault?: boolean
+}
+
+type CreateSvgoConfig = (
+  incomingConfig?: Config,
+  extraOptions?: OptimizeSvgExtraOptions
+) => Config
 
 interface MoveChildAttrToSVGElementOptions {
   wrapperElementNames?: string[]
@@ -17,4 +33,6 @@ declare const moveChildAttrToSVGElement: MoveChildAttrToSVGElement
 
 declare const responsiveSVGSize: ResponsiveSVGSize
 
-export { MoveChildAttrToSVGElement, MoveChildAttrToSVGElementOptions, ResponsiveSVGSize, moveChildAttrToSVGElement, responsiveSVGSize };
+declare const createSvgoConfig: CreateSvgoConfig
+
+export { MoveChildAttrToSVGElement, MoveChildAttrToSVGElementOptions, ResponsiveSVGSize, createSvgoConfig, moveChildAttrToSVGElement, responsiveSVGSize };

@@ -9,6 +9,13 @@
     "lib",
     "types"
   ],
+  "exports": {
+    ".": {
+      "require": "./lib/index.cjs.js",
+      "import": "./lib/index.esm.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
