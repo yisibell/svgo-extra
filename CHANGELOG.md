@@ -1,6 +1,21 @@
 # Changelog
 
 
+## v2.0.0
+
+
+### 🚀 Enhancements
+
+  - ⚠️  Update pkg to module type (0387784)
+
+#### ⚠️  Breaking Changes
+
+  - ⚠️  Update pkg to module type (0387784)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.2.0
 
 
