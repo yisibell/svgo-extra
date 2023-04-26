@@ -9,6 +9,7 @@
     "lib",
     "types"
   ],
+  "type": "module",
   "exports": {
     ".": {
       "require": "./lib/index.cjs.js",
