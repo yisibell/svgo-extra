@@ -35,7 +35,11 @@ const createSvgoConfig: CreateSvgoConfig = (
     finalSvgoConfig.plugins.push(
       moveChildAttrToSVGElement('moveStrokeAttrToSVGNode', {
         targetChildElementNames: ['path'],
-        targetChildElementAttributes: ['stroke', 'stroke-opacity', 'stroke-width'],
+        targetChildElementAttributes: [
+          'stroke',
+          'stroke-opacity',
+          'stroke-width',
+        ],
       })
     )
   }
