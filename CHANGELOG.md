@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v2.2.0
+
+
+### 🚀 Enhancements
+
+  - Add default attr stroke-width (e4a4935)
+
+### 🏡 Chore
+
+  - **release:** V2.1.0 (9ba3722)
+  - Repo sync (002531c)
+  - Fix conflicts (f77348b)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+- Elenh ([@yisibell](http://github.com/yisibell))
+
 ## v2.1.1
 
 ## v2.1.0
