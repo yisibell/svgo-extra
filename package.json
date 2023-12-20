@@ -46,7 +46,7 @@
     "@rollup/plugin-typescript": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
-    "changelogen": "^0.4.1",
+    "changelogen": "~0.5.3",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",

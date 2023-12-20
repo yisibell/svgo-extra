@@ -13,6 +13,18 @@
 ### ❤️  Contributors
 
 - Wenqing <wenqing@kerrylan.com>
+## v2.1.0
+
+[compare changes](https://github.com/yisibell/svgo-extra/compare/v2.0.0...v2.1.0)
+
+
+### 🚀 Enhancements
+
+  - Add default attr stroke-width ([e4a4935](https://github.com/yisibell/svgo-extra/commit/e4a4935))
+
+### ❤️  Contributors
+
+- Elenh ([@yisibell](http://github.com/yisibell))
 
 ## v2.0.0
 
