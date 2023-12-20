@@ -1,6 +1,17 @@
 # Changelog
 
 
+## v2.1.0
+
+
+### 🚀 Enhancements
+
+  - Upgrade typescript to v5 (141e6da)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.0.0
 
 
