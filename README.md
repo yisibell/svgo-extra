@@ -2,6 +2,8 @@
 
 A collection of **SVGO** Plug-ins.
 
+- [Release Notes](./CHANGELOG.md).
+
 # Features
 
 - Make SVG's color easy to change.
@@ -35,7 +37,5 @@ Create a **SVGO** plug-in that can make svg size responsive.
 
 Create a suitable configuration for **SVGO**, use `preset-default` config by default.
 
-# CHANGE LOG
 
-SEE <a href="./CHANGELOG.md" target="_blank">CHANGE LOG</a>.
 
