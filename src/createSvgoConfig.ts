@@ -15,12 +15,12 @@ export interface OptimizeSvgExtraOptions {
 
 export type CreateSvgoConfig = (
   incomingConfig?: SvgoConfig,
-  extraOptions?: OptimizeSvgExtraOptions
+  extraOptions?: OptimizeSvgExtraOptions,
 ) => SvgoConfig
 
 const createSvgoConfig: CreateSvgoConfig = (
   svgoConfig: SvgoConfig = {},
-  extraOptions: OptimizeSvgExtraOptions = {}
+  extraOptions: OptimizeSvgExtraOptions = {},
 ) => {
   const finalExtraOptions = Object.assign({ presetDefault: true }, extraOptions)
   let finalSvgoConfig: SvgoConfig = {}
@@ -40,7 +40,7 @@ const createSvgoConfig: CreateSvgoConfig = (
           'stroke-opacity',
           'stroke-width',
         ],
-      })
+      }),
     )
   }
 

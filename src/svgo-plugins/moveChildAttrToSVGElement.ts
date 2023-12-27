@@ -4,7 +4,7 @@ import type { MoveChildAttrToSVGElement } from '../../types'
 export const moveAttrToSvgNode = (
   svgNode: XastElement,
   targetElements: XastElement[],
-  targetAttribute: string
+  targetAttribute: string,
 ) => {
   if (targetElements.length <= 0) return
 
@@ -30,14 +30,14 @@ export const createTargetElements = (
   nodes: XastChild[],
   targetChildElementNames: string[],
   wrapperElementNames: string[],
-  res: XastElement[] = []
+  res: XastElement[] = [],
 ) => {
   const elements = nodes.filter(
     (v) =>
       v.type === 'element' &&
       (targetChildElementNames.includes(v.name) ||
         (wrapperElementNames.length > 0 &&
-          wrapperElementNames.includes(v.name)))
+          wrapperElementNames.includes(v.name))),
   ) as XastElement[]
 
   elements.forEach((v) => {
@@ -50,7 +50,7 @@ export const createTargetElements = (
         v.children,
         targetChildElementNames,
         wrapperElementNames,
-        res
+        res,
       )
     }
   })
@@ -63,7 +63,7 @@ export const createTargetElements = (
  */
 const moveChildAttrToSVGElement: MoveChildAttrToSVGElement = (
   name = 'movePathFillAttrToSVGNode',
-  option
+  option,
 ) => {
   const finalOption = Object.assign(
     {
@@ -71,7 +71,7 @@ const moveChildAttrToSVGElement: MoveChildAttrToSVGElement = (
       targetChildElementNames: ['path'],
       targetChildElementAttributes: ['fill', 'fill-opacity'],
     },
-    option
+    option,
   )
 
   return {
@@ -86,7 +86,7 @@ const moveChildAttrToSVGElement: MoveChildAttrToSVGElement = (
               const targetElements = createTargetElements(
                 node.children,
                 finalOption.targetChildElementNames,
-                finalOption.wrapperElementNames
+                finalOption.wrapperElementNames,
               )
 
               finalOption.targetChildElementAttributes.forEach((attrName) => {
