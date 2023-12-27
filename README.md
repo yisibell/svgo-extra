@@ -33,7 +33,7 @@ $ yarn add svgo-extra
 $ npm i svgo-extra
 ```
 
-# APIS
+# APIs
 
 ## moveChildAttrToSVGElement
 
