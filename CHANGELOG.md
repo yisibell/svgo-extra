@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.2.1
+
+
+### 🏡 Chore
+
+  - Ignore lib dir (c84e8e7)
+  - Update readme (ea5c146)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.2.0
 
 
