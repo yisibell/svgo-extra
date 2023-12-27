@@ -20,7 +20,8 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
-    "release": "npm run build && changelogen --release && npm publish --access=public && git push --follow-tags"
+    "release:nobuild": "changelogen --release && npm publish --access=public && git push --follow-tags",
+    "release": "npm run build && npm run release:nobuild"
   },
   "repository": {
     "type": "git",

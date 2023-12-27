@@ -1,3 +1,13 @@
+<p align="center">
+  <a href="https://www.npmjs.org/package/svgo-extra">
+    <img src="https://img.shields.io/npm/v/svgo-extra.svg">
+  </a>
+  <a href="https://npmcharts.com/compare/svgo-extra?minimal=true">
+    <img src="https://img.shields.io/npm/dm/svgo-extra.svg">
+  </a>
+  <br>
+</p>
+
 # svgo-extra
 
 A collection of **SVGO** Plug-ins.
