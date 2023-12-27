@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v2.3.0
+
+[compare changes](https://github.com/yisibell/svgo-extra/compare/v2.2.1...v2.3.0)
+
+### 🚀 Enhancements
+
+- Upgrade all deps version to latest ([a1dc851](https://github.com/yisibell/svgo-extra/commit/a1dc851))
+
+### 🏡 Chore
+
+- Update readme ([3136aaa](https://github.com/yisibell/svgo-extra/commit/3136aaa))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.2.1
 
 
