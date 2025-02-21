@@ -21,7 +21,8 @@
     "dev": "rollup -c -w",
     "build": "rollup -c",
     "release:nobuild": "changelogen --release && npm publish --access=public && git push --follow-tags",
-    "release": "npm run build && npm run release:nobuild"
+    "release": "npm run build && npm run release:nobuild",
+    "demo": "node ./playground/test.js"
   },
   "repository": {
     "type": "git",
@@ -45,6 +46,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-typescript": "^11.1.5",
+    "@types/lodash-es": "^4.17.12",
     "@typescript-eslint/eslint-plugin": "^6.18.0",
     "@typescript-eslint/parser": "^6.18.0",
     "changelogen": "~0.5.5",
@@ -52,6 +54,7 @@
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.2",
+    "lodash-es": "^4.17.21",
     "prettier": "^3.1.1",
     "rollup": "^4.9.4",
     "rollup-plugin-dts": "^6.1.0",

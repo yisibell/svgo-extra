@@ -53,10 +53,14 @@ const createSvgoConfig: CreateSvgoConfig = (
   }
 
   if (svgoConfig.plugins && svgoConfig.plugins.length > 0) {
-    finalSvgoConfig.plugins = [
-      ...finalSvgoConfig.plugins,
-      ...svgoConfig.plugins,
-    ]
+    svgoConfig.plugins.forEach((v) => {
+      const index = finalSvgoConfig.plugins?.findIndex((e) => e === v) || -1
+      if (index >= 0) {
+        finalSvgoConfig.plugins?.splice(index, 1, v)
+      } else {
+        finalSvgoConfig.plugins?.push(v)
+      }
+    })
   }
 
   delete svgoConfig.plugins

@@ -9,7 +9,7 @@ export interface MoveChildAttrToSVGElementOptions {
 
 type MoveChildAttrToSVGElement = (
   name?: string,
-  options?: MoveChildAttrToSVGElementOptions
+  options?: MoveChildAttrToSVGElementOptions,
 ) => CustomPlugin
 
 type ResponsiveSVGSize = () => CustomPlugin
