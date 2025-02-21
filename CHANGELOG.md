@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v2.3.1
+
+[compare changes](https://github.com/yisibell/svgo-extra/compare/v2.3.0...v2.3.1)
+
+### 🩹 Fixes
+
+- Svgo plugins merge failed ([82e4358](https://github.com/yisibell/svgo-extra/commit/82e4358))
+
+### 🏡 Chore
+
+- Upgrade dev dependencies ([f03feec](https://github.com/yisibell/svgo-extra/commit/f03feec))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.3.0
 
 [compare changes](https://github.com/yisibell/svgo-extra/compare/v2.2.1...v2.3.0)
