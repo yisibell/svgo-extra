@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.3.2
+
+[compare changes](https://github.com/yisibell/svgo-extra/compare/v2.3.1...v2.3.2)
+
+### 🩹 Fixes
+
+- Svg style vars ([da65b5c](https://github.com/yisibell/svgo-extra/commit/da65b5c))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.3.1
 
 [compare changes](https://github.com/yisibell/svgo-extra/compare/v2.3.0...v2.3.1)
