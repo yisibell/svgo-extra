@@ -6,7 +6,9 @@ import pkg from './package.json' assert { type: 'json' }
 export default [
   {
     input: 'src/index.ts',
-    external: Object.keys(pkg.peerDependencies),
+    external: Object.keys(
+      Object.assign(pkg.peerDependencies, pkg.dependencies),
+    ),
     plugins: [
       commonjs(),
       typescript(), // so Rollup can convert TypeScript to JavaScript

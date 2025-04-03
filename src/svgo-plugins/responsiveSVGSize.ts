@@ -5,14 +5,16 @@ export const setAttr = (node: XastElement, name: string, value: string) => {
   node.attributes[name] = value
 }
 
-export const genStyles = (cssObj: { [key: string]: string | number }) => {
-  return Object.keys(cssObj).reduce((res, key) => {
-    const item = `${key}:${cssObj[key]};`
+export const genStyles = (cssObj: Record<string, string | number | null>) => {
+  return Object.keys(cssObj)
+    .filter((k) => !!cssObj[k])
+    .reduce((res, key) => {
+      const item = `${key}:${cssObj[key]};`
 
-    res += item
+      res += item
 
-    return res
-  }, '')
+      return res
+    }, '')
 }
 
 /**
@@ -35,8 +37,12 @@ const responsiveSVGSize: ResponsiveSVGSize = () => {
               const addStyle = genStyles({
                 '--svg-origin-width': wNumber,
                 '--svg-origin-height': hNumber,
-                '--svg-origin-width--with-unit': `${wNumber}px`,
-                '--svg-origin-height--with-unit': `${hNumber}px`,
+                '--svg-origin-width--with-unit': wNumber
+                  ? `${wNumber}px`
+                  : null,
+                '--svg-origin-height--with-unit': hNumber
+                  ? `${hNumber}px`
+                  : null,
               })
 
               const styleValue = style ? `${addStyle}${style}` : addStyle
